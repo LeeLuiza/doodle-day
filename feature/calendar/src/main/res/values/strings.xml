@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="month_names">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <string-array name="week_days_short">
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+        <item>Вс</item>
+    </string-array>
+
+    <string name="today">Сегодня</string>
+    <string name="undo">Отменить</string>
+    <string name="redo">Вернуть</string>
+    <string name="eraser">Ластик</string>
+    <string name="drawing_mode">Режим рисования</string>
+    <string name="eraser_mode">Режим ластика</string>
+    <string name="previous_month">Предыдущий месяц</string>
+    <string name="sticker_has">Есть стикеры</string>
+    <string name="next_month">Следующий месяц</string>
+
+    <string name="error_data_save">Не удалось сохранить данные</string>
+    <string name="error_data_delete">Не удалось удалить данные</string>
+    <string name="error_network">Ошибка сети. Проверьте подключение к интернету</string>
+    <string name="error_unknown">Произошла неизвестная ошибка</string>
+
+    <string name="error_drawings_load">Не удалось загрузить рисунки</string>
+</resources>

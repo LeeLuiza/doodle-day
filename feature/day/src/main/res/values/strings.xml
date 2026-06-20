@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day_title">День %d</string>
+    <string name="plan_for_day">План на день</string>
+
+    <string name="back">Назад</string>
+    <string name="undo">Отменить</string>
+    <string name="redo">Вернуть</string>
+    <string name="eraser">Ластик</string>
+    <string name="sticker">Стикер</string>
+    <string name="drawing">Рисование</string>
+    <string name="add">Добавить</string>
+    <string name="save">Сохранить</string>
+    <string name="create">Создать</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+
+    <string name="new_event">Новое событие</string>
+    <string name="edit_event">Редактировать</string>
+    <string name="new_sticker">Новый стикер</string>
+    <string name="edit_sticker">Редактировать стикер</string>
+
+    <string name="time_hint">Время</string>
+    <string name="title_hint">Название</string>
+    <string name="note_hint">Примечание</string>
+    <string name="sticker_text_hint">Текст стикера</string>
+    <string name="color_label">Цвет:</string>
+
+    <string name="no_events">Нет событий. Нажмите +</string>
+
+    <string name="error_data_save">Не удалось сохранить данные</string>
+    <string name="error_data_delete">Не удалось удалить данные</string>
+    <string name="error_network">Ошибка сети. Проверьте подключение к интернету</string>
+    <string name="error_unknown">Произошла неизвестная ошибка</string>
+
+    <string name="error_tasks_load">Не удалось загрузить задачи</string>
+    <string name="error_stickers_load">Не удалось загрузить стикеры</string>
+    <string name="error_drawings_load">Не удалось загрузить рисунки</string>
+</resources>
