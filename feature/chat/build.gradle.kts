@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.chat"
+    namespace = "com.leeluiza.chat"
     compileSdk = 36
 
     defaultConfig {

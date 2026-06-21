@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.day"
+    namespace = "com.leeluiza.day"
     compileSdk = 36
 
     defaultConfig {

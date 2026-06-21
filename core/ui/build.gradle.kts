@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ui"
+    namespace = "com.leeluiza.ui"
     compileSdk = 36
 
     defaultConfig {

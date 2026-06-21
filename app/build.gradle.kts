@@ -4,14 +4,15 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.planner"
+    namespace = "com.leeluiza.doodleday"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.planner"
+        applicationId = "com.example.doodleday"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -46,6 +47,9 @@ dependencies {
     implementation(project(":feature:calendar"))
     implementation(project(":feature:day"))
     implementation(project(":feature:chat"))
+
+    implementation(libs.firebase.bom)
+    implementation(libs.firebase.analytics)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

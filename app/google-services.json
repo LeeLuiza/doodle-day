@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426670037542",
+    "project_id": "doodleday-5ed5a",
+    "storage_bucket": "doodleday-5ed5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426670037542:android:c9779e2a6a7c19f9c8e4e7",
+        "android_client_info": {
+          "package_name": "com.leeluiza.doodleday"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_TznIsOfSpgixe_Gb4cO4EjMbhY1seMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.calendar"
+    namespace = "com.leeluiza.calendar"
     compileSdk = 36
 
     defaultConfig {

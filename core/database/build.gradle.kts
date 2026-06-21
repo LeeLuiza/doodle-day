@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.database"
+    namespace = "com.leeluiza.database"
     compileSdk = 36
 
     defaultConfig {
