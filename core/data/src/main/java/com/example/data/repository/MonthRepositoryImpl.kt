@@ -3,8 +3,6 @@ package com.example.data.repository
 import com.example.data.mapper.toDomain
 import com.example.data.mapper.toEntity
 import com.example.database.dao.DrawingDao
-import com.example.database.entity.DrawingStrokeEntity
-import com.example.database.entity.PointEntity
 import com.example.domain.model.DrawingStroke
 import com.example.domain.model.ErrorType
 import com.example.domain.model.Result

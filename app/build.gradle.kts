@@ -39,6 +39,13 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:common"))
+    implementation(project(":core:database"))
+    implementation(project(":core:data"))
+    implementation(project(":core:domain"))
+    implementation(project(":feature:calendar"))
+    implementation(project(":feature:day"))
+    implementation(project(":feature:chat"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -49,16 +56,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.google.dagger:hilt-android:2.57.1")
-    ksp("com.google.dagger:hilt-compiler:2.57.1")
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 
-    implementation("androidx.navigation:navigation-compose:2.9.8")
-
-    implementation(project(":core:common"))
-    implementation(project(":core:database"))
-    implementation(project(":core:data"))
-    implementation(project(":core:domain"))
-    implementation(project(":feature:calendar"))
-    implementation(project(":feature:day"))
-    implementation(project(":feature:chat"))
+    implementation(libs.androidx.navigation.compose)
 }

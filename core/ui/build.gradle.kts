@@ -32,6 +32,9 @@ android {
         jvmTarget = "11"
     }
 }
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
 
 dependencies {
     implementation(project(":core:domain"))
@@ -40,10 +43,13 @@ dependencies {
 
     val composeBom = platform("androidx.compose:compose-bom:2024.02.00")
     implementation(composeBom)
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    debugImplementation("androidx.compose.ui:ui-tooling")
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.ui.tooling.preview)
+    debugImplementation(libs.androidx.ui.tooling)
 
-    implementation("androidx.compose.material:material-icons-extended")
+    implementation(libs.androidx.material.icons.extended)
+
+    testImplementation(libs.junit.jupiter)
+    testImplementation(kotlin("test"))
 }
