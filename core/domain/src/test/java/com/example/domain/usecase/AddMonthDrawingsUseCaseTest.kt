@@ -12,7 +12,7 @@ import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 import kotlin.test.assertTrue
 
-class SaveMonthDrawingsUseCaseTest {
+class AddMonthDrawingsUseCaseTest {
     private val repository = mock<MonthRepository>()
     private val useCase = AddMonthDrawingsUseCase(repository)
 
@@ -30,19 +30,19 @@ class SaveMonthDrawingsUseCaseTest {
 
     @Test
     fun `should return Success when repository saves drawings successfully`() = runTest {
-        whenever(repository.addDrawings(monthId, strokes)).thenReturn(Result.Success(Unit))
+        whenever(repository.replaceAllDrawings(monthId, strokes)).thenReturn(Result.Success(Unit))
         val result = useCase(monthId, strokes)
 
-        verify(repository).addDrawings(monthId, strokes)
+        verify(repository).replaceAllDrawings(monthId, strokes)
         assertTrue(result is Result.Success)
     }
 
     @Test
     fun `should return Error when repository fails to save drawings`() = runTest {
-        whenever(repository.addDrawings(monthId, strokes)).thenReturn(Result.Error(ErrorType.DATA_SAVE_ERROR))
+        whenever(repository.replaceAllDrawings(monthId, strokes)).thenReturn(Result.Error(ErrorType.DATA_SAVE_ERROR))
         val result = useCase(monthId, strokes)
 
-        verify(repository).addDrawings(monthId, strokes)
+        verify(repository).replaceAllDrawings(monthId, strokes)
         assertTrue(result is Result.Error)
         assertTrue(result.errorType == ErrorType.DATA_SAVE_ERROR)
     }

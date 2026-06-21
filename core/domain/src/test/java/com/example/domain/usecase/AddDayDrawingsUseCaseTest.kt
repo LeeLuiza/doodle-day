@@ -30,21 +30,21 @@ class AddDayDrawingsUseCaseTest {
 
     @Test
     fun `AddDayDrawingsUseCase should return Success when repo succeeds`() = runTest {
-        whenever(repository.addStrokes(dayId, strokes)).thenReturn(Result.Success(Unit))
+        whenever(repository.replaceAllDrawings(dayId, strokes)).thenReturn(Result.Success(Unit))
 
         val result = useCase(dayId, strokes)
 
-        verify(repository).addStrokes(dayId, strokes)
+        verify(repository).replaceAllDrawings(dayId, strokes)
         assertTrue(result is Result.Success)
     }
 
     @Test
     fun `AddDayDrawingsUseCase should return Error when repo fails`() = runTest {
-        whenever(repository.addStrokes(dayId, strokes)).thenReturn(Result.Error(ErrorType.DATA_SAVE_ERROR))
+        whenever(repository.replaceAllDrawings(dayId, strokes)).thenReturn(Result.Error(ErrorType.DATA_SAVE_ERROR))
 
         val result = useCase(dayId, strokes)
 
-        verify(repository).addStrokes(dayId, strokes)
+        verify(repository).replaceAllDrawings(dayId, strokes)
         assertTrue(result is Result.Error)
         assertEquals(ErrorType.DATA_SAVE_ERROR, (result as Result.Error).errorType)
     }
