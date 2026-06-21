@@ -23,7 +23,7 @@ object DatabaseModule {
         return Room.databaseBuilder(
             context, AppDatabase::class.java, "planner-database"
         )
-            .fallbackToDestructiveMigration()
+            .addMigrations()
             .build()
     }
 

@@ -1,5 +1,6 @@
 package com.leeluiza.day.presentation.components
 
+import com.leeluiza.day.R
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete

@@ -1,5 +1,6 @@
 package com.leeluiza.day.presentation
 
+import com.leeluiza.day.R
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons

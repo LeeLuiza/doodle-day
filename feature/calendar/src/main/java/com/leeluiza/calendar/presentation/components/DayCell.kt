@@ -1,5 +1,6 @@
 package com.leeluiza.calendar.presentation.components
 
+import com.leeluiza.calendar.R
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState

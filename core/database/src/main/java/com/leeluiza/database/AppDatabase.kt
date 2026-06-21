@@ -17,6 +17,7 @@ import com.leeluiza.database.converter.PointsTypeConverter
     DrawingStrokeEntity::class
     ],
     version = 1,
+    exportSchema = true
 )
 @TypeConverters(
     value = [PointsTypeConverter::class]
